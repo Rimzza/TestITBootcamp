@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/usersJson")
 public class UserRestControllers {
 
-    /*private final UserService userService;
+    private final UserService userService;
 
     @Autowired
     public UserRestControllers(UserService userService) {
@@ -30,5 +30,5 @@ public class UserRestControllers {
     @GetMapping("{id}")
     public User getUser(@PathVariable("id") int id) {
         return  userService.findOne(id);
-    }*/
+    }
 }

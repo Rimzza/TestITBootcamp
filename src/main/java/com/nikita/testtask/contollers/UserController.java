@@ -63,7 +63,7 @@ public class UserController {
     public String updateUser(@PathVariable("id") int id,@ModelAttribute("user") @Valid User user, BindingResult bindingResult) {
         if (bindingResult.hasErrors())
             return "users/edit";
-        userService.save(user);
+        userService.update(id,user);
         return "redirect:/users";
     }
 
